@@ -342,7 +342,7 @@ body{
            font-size: 15px;
            width: 400px;
            padding: 5px;
-           margin:1px 10px 15px 10px;
+           margin:1px 5px 15px 5px;
            border-radius: 25px;
        }
        #sobremi-main{
@@ -480,14 +480,14 @@ div p{
 }
 div h4{
     font-family: "bebas neue";
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     background-color: #e8a197;
     text-align: center;
     height: 25px;
     width: 350px;
     padding: 5px;
-    margin:10px 25px;
+    margin:10px 20px;
     border-radius: 15px;
 }
 .carrusel-imagen{
@@ -498,14 +498,14 @@ div h4{
 }
 div p{
     font-family: "julius";
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     background-color:#F4E7EC;
     text-align: center;
     height: 100%px;
     width: 350px;
     padding: 5px;
-    margin: 10px 25px;
+    margin: 10px 20px;
     border-radius: 15px;
 }
 }
@@ -879,9 +879,9 @@ form div button{
     border: #e8a197;
 }
 iframe{
-    height: 300px;
-    width: 350px;
+    height: 290px;
+    width: 340px;
     padding: 5px;
-    margin: 5px 40px; 
+    margin: 5px 35px; 
 }
 }
