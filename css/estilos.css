@@ -1,887 +1,790 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-image: url(../img/fondo1.png);
-    background-size: cover;
+
+body {
+  background-image: url(../img/fondo1.png);
+  background-size: cover;
 }
-@font-face {
-    font-family:"julius" ;
-    src: url(../fonts/JuliusSansOne-Regular.ttf);
-}
-@font-face {
-    font-family: "bebas neue";
-    src: url(../fonts/BebasNeue-Regular.ttf);
-}
+
 /*maqueta pagina principal*/
-  #grilla{
+#grilla {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+}
+#grilla .header {
+  grid-area: header;
+}
+#grilla .main {
+  grid-area: main;
+}
+#grilla .footer {
+  grid-area: footer;
+}
+
+@font-face {
+  font-family: "julius";
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
+}
+@font-face {
+  font-family: "bebas neue";
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+/*****INDEX*****/
+/******INDEX******/
+/*menu de incio*/
+#header {
+  overflow: hidden;
+  background-color: #F4E7EC;
+  display: grid;
+  grid-template-areas: "imagen-logo menu";
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 135px;
+}
+
+.imagen-logo {
+  grid-area: imagen-logo;
+  background-color: #F4E7EC;
+  height: 130px;
+  width: 130px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.menu {
+  overflow: hidden;
+  grid-area: menu;
+  text-decoration: none;
+  list-style-type: none;
+  height: 140px;
+  padding: 40px 10px;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .textomenu {
+  font-family: "bebas neue";
+  font-size: 25px;
+  padding: 40px 10px;
+  margin: 1px;
+  text-decoration: none;
+  color: #918f91;
+}
+.menu a:hover {
+  font-weight: lighter;
+  padding: 8px;
+  background-color: #f6dce6;
+  color: #918f91;
+}
+
+/*frase inicio*/
+main div h2 {
+  overflow: hidden;
+  font-family: "julius";
+  color: black;
+  font-size: 30px;
+  background-color: #e8a197;
+  opacity: 70%;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
+  margin: 25px 30px;
+  border-radius: 30px;
+}
+main div h2 a {
+  color: black;
+  font-family: "julius";
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/*listas de la pagina de incio*/
+.listainicio {
+  background-color: #e8a197;
+  opacity: 70%;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
+  margin: 50px;
+  border-radius: 30px;
+}
+
+/*pie de pagina*/
+footer {
+  overflow: hidden;
+  background-color: #F4E7EC;
+  opacity: 80%;
+}
+footer h6 {
+  font-family: "bebas neue";
+  color: #918f91;
+  text-align: center;
+  width: 100%;
+  font-size: 45px;
+  padding: 10px;
+  margin: 10px;
+}
+footer .footerr {
+  height: 45px;
+  width: 45px;
+}
+footer .redesfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .pie-de-pagina {
+  font-family: "julius";
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 30px 5px 5px;
+  margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+  #grilla {
+    overflow-x: hidden;
     display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-columns:100%;
-   }
-  .header {
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+  }
+  #grilla .header {
     grid-area: header;
   }
-  .main{
+  #grilla .main {
     grid-area: main;
-   }
-   .footer{
+  }
+  #grilla .footer {
     grid-area: footer;
-    }
- /*menu de incio*/
- #header{
+  }
+  /*menu de incio*/
+  #header {
     background-color: #F4E7EC;
+    width: 100%;
     display: grid;
-    grid-template-areas: 
-    "imagen-logo menú";
-    grid-template-columns: 140px 1fr;
-    grid-template-rows: 135px;
- }
- .imagen-logo{
+    grid-template-areas: "imagen-logo" "menu";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 40px;
+    justify-items: center;
+  }
+  #header .imagen-logo {
     grid-area: imagen-logo;
-    background-color:#F4E7EC;
-    height: 130px;
-    width: 130px;
-    padding: 2px;
-    margin: 2px;
- }
-  .menu{
-    grid-area: menú;
-    text-decoration: none;
-    list-style-type: none;
-    height: 140px;
-    padding: 40px 10px;
-    margin: 10px 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
- }
- .textomenu{
-    font-family: "bebas neue";
-    font-size: 25px;
-    padding: 40px 10px;
-    margin: 1px;
-    text-decoration: none;
-    color: #918f91;
- }
- a:hover{
-    font-weight: lighter;
-    padding: 8px;
-    background-color: #f6dce6;
-    color: #918f91;
- }
- /*frase inicio*/
- main div h2{
-    font-family: "julius";
-    color: black;
-    font-size: 30px;
-    background-color: #e8a197;
-    opacity: 70%;
-    text-align: center;
-    height: 100px;
-    padding: 30px;
-    margin: 25px 30px;
-    border-radius: 30px;
- }
- /*listas de la pagina de incio*/
- h2 a{
-    color: black;
-    font-family: "julius";
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
- }
- .listainicio{
-    background-color: #e8a197;
-    opacity: 70%;
-    text-align: center;
-    height: 100px;
-    padding: 30pxpx;
-    margin: 50px;
-    border-radius: 30px;
- }
- /*pie de pagina*/
- footer{
+  }
+  #header .imagen-logo {
     background-color: #F4E7EC;
-    opacity: 80%;
- }
- h6{
-    font-family: "bebas neue";
-    color: #918f91;
-    text-align: center;
-    width: 100%;
-    font-size: 45px;
-    padding: 10px;
-    margin: 10px;
- }
- .footerr{
-    height: 45px;
-    width: 45px;
- }
- .redesfooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
- }
- .pie-de-pagina{
-    font-family: "julius";
-    color: black;
+    height: 120px;
+    width: 120px;
+    padding: 5px 1px 1px;
+  }
+  #header .menu {
+    grid-area: menú;
+    justify-items: start;
+    height: 40px;
+    padding: 15px;
+    margin: 1px 5px;
+  }
+  #header .menu .textomenu {
+    grid-area: menu;
+    justify-items: start;
+    font-size: 12px;
+    padding: 5px 9px;
+  }
+  #header .menu a:hover {
+    padding: 5px;
+  }
+  /*frase inicio*/
+  main div h2 {
     font-size: 20px;
-    text-align: center;
-    width: 100%;
-    padding: 30px 5px 5px;
-    margin: 10px;
- }
- @media (min-width: 380px) and (max-width:699px){
-    #grilla{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-     grid-template-columns:100%;
-    }
-    .header {
-      grid-area: header;
-    }
-    .main{
-      grid-area: main;
-     }
-     .footer{
-      grid-area: footer;
-      }
-   /*menu de incio*/
-   #header{
-       background-color: #F4E7EC;
-       width: 100%;
-       display: grid;
-       grid-template-areas: 
-       "imagen-logo" 
-       "menú";
-       grid-template-columns:1fr;
-       grid-template-rows: 120px 40px;
-       justify-items: center;
-   }
-   .imagen-logo{
-      grid-area: imagen-logo; 
-   }
-    .imagen-logo{
-       background-color:#F4E7EC;
-       height: 120px;
-       width: 120px;
-       padding: 5px 1px 1px;
-    }
-    .menu{
-        grid-area: menú;
-       justify-items: start;
-       text-decoration: none;
-       list-style-type: none;
-       height: 40px;
-       padding: 15px;
-       margin: 1px 5px ;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-between;
-       align-items: center;
-    }
-    .textomenu{ 
-       grid-area: menú;
-       justify-items: start;
-       grid-area: menú;
-       font-family: "bebas neue";
-       font-size: 15px;
-       padding: 5px 10px;
-       margin: 1px;
-       text-decoration: none;
-       color: #918f91;
-    }
-    a:hover{
-       font-weight: lighter;
-       padding: 5px;
-       background-color: #f6dce6;
-       color: #918f91;
-    }
-    /*frase inicio*/
-    main div h2{
-       font-family: "julius";
-       color: black;
-       font-size: 20px;
-       background-color: #e8a197;
-       opacity: 70%;
-       text-align: center;
-       height: 60px;
-       padding: 10px;
-       margin: 15px 20px;
-       border-radius: 15px;
-    }
-    /*listas de la pagina de incio*/
-    h2 a{
-       color: black;
-       font-family: "julius";
-       font-size: 20px;
-       text-align: center;
-       text-decoration: none;
-       height: 30px;
-       padding: 5px;
-       margin: 5px;
-    }
-    .listainicio{
-       background-color: #e8a197;
-       opacity: 70%;
-       text-align: center;
-       height: 60px;
-       padding: 20px;
-       margin: 20px;
-       border-radius: 30px;
-    }
-    /*pie de pagina*/
-    footer{
-       background-color: #F4E7EC;
-       opacity: 80%;
-    }
-    h6{
-       font-family: "bebas neue";
-       color: #918f91;
-       text-align: center;
-       width: 100%;
-       font-size: 30px;
-       padding: 10px;
-       margin: 10px;
-    }
-    .footerr{
-       height: 40px;
-       width: 40px;
-    }
-    .redesfooter{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-    }
-    .pie-de-pagina{
-       font-family: "julius";
-       color: black;
-       font-size: 10px;
-       text-align: center;
-       width: 100%;
-       padding: 10px 5px 5px;
-       margin: 10px;
-    }
-    }
-/*pagina sobre mi, contenido del main*/
-    #grilla2{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    grid-template-columns: 100%
-    }
-    .header {
-        grid-area: header;
-    }
-    .main{
-        grid-area: main;
-    }
-    .footer{
-        grid-area: footer;
-    }
-    #sobremi-main{
-        display: grid;
-        grid-template-areas: 
-        "carrusel parrafo";
-        grid-template-columns: repeat(2 1fr);
-    }
-    .carrusel{
-        grid-area: carrusel;
-        margin: 10px;
-    }
-   section article p{
-       font-family: "julius";
-       color: black;
-       background-color: #F4E7EC;
-       font-size: 20px;
-       width: 700px;
-       padding: 5px;
-       margin:1px 10px 15px 10px;
-       border-radius: 25px;
-}
-@media (min-width: 380px) and (max-width: 699px){
-    #grilla2{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-        grid-template-columns: 100%;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-        }
-        .header {
-            grid-area: header;
-        }
-        .main{
-            grid-area: main;
-        }
-        .footer{
-            grid-area: footer;
-        }
-
-       section article p{
-           font-family: "julius";
-           color: black;
-           background-color: #F4E7EC;
-           font-size: 15px;
-           width: 400px;
-           padding: 5px;
-           margin:1px 5px 15px 5px;
-           border-radius: 25px;
-       }
-       #sobremi-main{
-        display: grid;
-        grid-template-areas: 
-        "carrusel" 
-        "parrafo";
-        grid-template-rows: repeat(2 1fr);
-    }
-    .carrusel{
-        grid-area: carrusel;
-        margin: 10px;
-    }
-}
-/*pagina proyectos*/
-#grilla3{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
-#pagina-proyecto{
-    display: grid;
-    grid-template-areas: 
-    "proyecto1 proyecto2 proyecto3"
-    "proyecto4 proyecto5 proyecto6" ;
-    grid-template-columns:repeat(3 1fr);
-    grid-template-rows: (2 1fr) ;
-}
-.proyecto1{
-    grid-area: proyecto1;
-}
-.proyecto2{
-    grid-area: proyecto2;
-}
-.proyecto3{
-    grid-area: proyecto3;
-}
-.proyecto4{
-    grid-area: proyecto4;
-}
-.proyecto5{
-   grid-area: proyecto5;
-}
-.proyecto6{
-   grid-area: proyecto6;
-}
-div h4{
-    font-family: "bebas neue";
+    height: 60px;
+    padding: 10px;
+    margin: 15px 20px;
+    border-radius: 15px;
+  }
+  main div h2 a {
+    font-size: 20px;
+    height: 30px;
+  }
+  /*listas de la pagina de incio*/
+  .listainicio {
+    height: 60px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  /*pie de pagina*/
+  footer h6 {
     font-size: 25px;
-    color: black;
-    background-color: #e8a197;
-    text-align: center;
+  }
+  footer .footerr {
     height: 35px;
+    width: 35px;
+  }
+  footer .pie-de-pagina {
+    font-size: 10px;
+    padding: 10px 5px 5px;
+    margin: 10px 10px 5px;
+  }
+}
+/*****SOBRE MI*****/
+/******SOBRE MI******/
+/*contenido del main*/
+#sobremi-main {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas: "carrusel parrafo";
+  grid-template-columns: repeat(2 1fr);
+}
+
+.carrusel {
+  grid-area: carrusel;
+  margin: 10px;
+}
+
+section article p {
+  overflow: hidden;
+  grid-area: parrafo;
+  font-family: "julius";
+  color: black;
+  background-color: #F4E7EC;
+  font-size: 20px;
+  width: 700px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+  #sobremi-main {
+    display: grid;
+    grid-template-areas: "carrusel" "parrafo";
+    grid-template-rows: repeat(2 1fr);
+    justify-items: center;
+  }
+  section article p {
+    grid-area: parrafo;
+    font-size: 12px;
     width: 300px;
     padding: 5px;
-    margin:10px 50px;
+    margin: 5px;
     border-radius: 15px;
+  }
+  .carrusel {
+    grid-area: carrusel;
+    width: 300px;
+    margin: 10px;
+  }
 }
-.carrusel-imagen{
+/*****PROYECTOS*****/
+/*pagina proyectos*/
+#pagina-proyecto {
+  display: grid;
+  grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 2 1fr;
+  justify-items: center;
+}
+#pagina-proyecto .proyecto1 {
+  grid-area: proyecto1;
+}
+#pagina-proyecto .proyecto2 {
+  grid-area: proyecto2;
+}
+#pagina-proyecto .proyecto3 {
+  grid-area: proyecto3;
+}
+#pagina-proyecto .proyecto4 {
+  grid-area: proyecto4;
+}
+#pagina-proyecto .proyecto5 {
+  grid-area: proyecto5;
+}
+#pagina-proyecto .proyecto6 {
+  grid-area: proyecto6;
+}
+
+div h4 {
+  font-family: "bebas neue";
+  font-size: 30px;
+  color: black;
+  background-color: #e8a197;
+  text-align: center;
+  height: 40px;
+  width: 350px;
+  padding: 5px;
+  margin: 10px 50px;
+  border-radius: 15px;
+}
+
+.carrusel-imagen {
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  margin: 10px 50px;
+}
+
+div p {
+  font-family: "julius";
+  font-size: 15px;
+  color: black;
+  background-color: #F4E7EC;
+  text-align: center;
+  height: 100% px;
+  width: 350px;
+  padding: 5px;
+  margin: 10px 50px;
+  border-radius: 15px;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  #pagina-proyecto {
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 3 1fr;
+    justify-items: center;
+  }
+  #pagina-proyecto .proyecto1 {
+    grid-area: proyecto1;
+  }
+  #pagina-proyecto .proyecto2 {
+    grid-area: proyecto2;
+  }
+  #pagina-proyecto .proyecto3 {
+    grid-area: proyecto3;
+  }
+  #pagina-proyecto .proyecto4 {
+    grid-area: proyecto4;
+  }
+  #pagina-proyecto .proyecto5 {
+    grid-area: proyecto5;
+  }
+  #pagina-proyecto .proyecto6 {
+    grid-area: proyecto6;
+  }
+  div h4 {
+    font-size: 25px;
+    height: 35px;
+    width: 300px;
+    margin: 10px 25px;
+    border-radius: 10px;
+  }
+  .carrusel-imagen {
     height: 300px;
     width: 300px;
     padding: 10px;
-    margin:10px 50px;
-}
-div p{
-    font-family: "julius";
+    margin: 10px 25px;
+  }
+  div p {
     font-size: 15px;
-    color: black;
-    background-color:#F4E7EC;
-    text-align: center;
-    height: 100%px;
+    height: 100%;
     width: 300px;
     padding: 5px;
-    margin: 10px 50px;
-    border-radius: 15px;
-}
-@media (min-width: 380px) and (max-width: 699px){
-    /*pagina proyectos*/
-#grilla3{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
-#pagina-proyecto{
-    display: grid;
-    grid-template-areas: 
-    "proyecto1" 
-    "proyecto2" 
-    "proyecto3" 
-    "proyecto4"
-    "proyecto5" 
-    "proyecto6" ;
-    grid-template-columns:repeat( 1fr);
-    grid-template-rows: (6 1fr) ;
-}
-.proyecto1{
-    grid-area: proyecto1;
-}
-.proyecto2{
-    grid-area: proyecto2;
-}
-.proyecto3{
-    grid-area: proyecto3;
-}
-.proyecto4{
-    grid-area: proyecto4;
-}
-.proyecto5{
-   grid-area: proyecto5;
-}
-.proyecto6{
-   grid-area: proyecto6;
-}
-div h4{
-    font-family: "bebas neue";
-    font-size: 20px;
-    color: black;
-    background-color: #e8a197;
-    text-align: center;
-    height: 25px;
-    width: 350px;
-    padding: 3px;
-    margin:10px 25px;
-    border-radius: 15px;
-}
-.carrusel-imagen{
-    height: 350px;
-    width: 350px;
-    padding: 10px;
-    margin:10px 25px;
-}
-div p{
-    font-family: "julius";
-    font-size: 15px;
-    color: black;
-    background-color:#F4E7EC;
-    text-align: center;
-    height: 100%px;
-    width: 350px;
-    padding: 5px;
     margin: 10px 25px;
-    border-radius: 15px;
+    border-radius: 10px;
+  }
 }
+@media (min-width: 320px) and (max-width: 699px) {
+  #pagina-proyecto {
+    display: grid;
+    grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 6 1fr;
+    justify-items: center;
+  }
+  #pagina-proyecto .proyecto1 {
+    grid-area: proyecto1;
+  }
+  #pagina-proyecto .proyecto2 {
+    grid-area: proyecto2;
+  }
+  #pagina-proyecto .proyecto3 {
+    grid-area: proyecto3;
+  }
+  #pagina-proyecto .proyecto4 {
+    grid-area: proyecto4;
+  }
+  #pagina-proyecto .proyecto5 {
+    grid-area: proyecto5;
+  }
+  #pagina-proyecto .proyecto6 {
+    grid-area: proyecto6;
+  }
+  div h4 {
+    font-size: 20px;
+    width: 300px;
+    height: 25px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .carrusel-imagen {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+  div p {
+    font-size: 12px;
+    color: black;
+    height: 100%;
+    width: 300px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+  }
 }
+/*****SERVICIOS*****/
 /*pagina servicios*/
-#grilla4{
+#servicios {
+  display: grid;
+  grid-template-areas: "servicio1 servicio2 servicio3";
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 100%;
+  align-self: center;
+}
+#servicios .diseño-de-marca {
+  grid-area: servicio1;
+}
+#servicios .diseño-de-papeleria {
+  grid-area: servicio2;
+}
+#servicios .diseño-web {
+  grid-area: servicio3;
+}
+
+.imagen-servicio {
+  height: 300px;
+  width: 400px;
+  padding: 5px;
+  margin: 15px;
+}
+
+div h3 {
+  font-family: "bebas neue";
+  font-size: 20px;
+  color: black;
+  background-color: #e8a197;
+  text-align: center;
+  height: 35px;
+  width: 400px;
+  padding: 5px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.lista-servicios {
+  list-style-type: none;
+  color: black;
+  background-color: #F4E7EC;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: start;
+  height: 100%;
+  width: 400px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.boton {
+  font-family: "julius";
+  text-decoration: none;
+  background-color: #e8a197;
+  text-align: center;
+  height: 40px;
+  width: 400px;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.textoboton {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 1px;
+  margin: 1px;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  #servicios {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
- #servicios{
-    display: grid;
-    grid-template-areas: 
-    "servicio1 servicio2 servicio3";
+    grid-template-areas: "servicio1 servicio2 servicio3";
     grid-template-columns: repeat(3 1fr);
     grid-template-rows: 100%;
     align-self: center;
-}
-.diseño-de-marca{
+  }
+  #servicios .diseño-de-marca {
     grid-area: servicio1;
-}
-.diseño-de-papeleria{
+  }
+  #servicios .diseño-de-papeleria {
     grid-area: servicio2;
-}
-.diseño-web{
+  }
+  #servicios .diseño-web {
     grid-area: servicio3;
-}
-.imagen-servicio{
-    height: 300px;
-    width: 400px;
+  }
+  .imagen-servicio {
+    height: 200px;
+    width: 300px;
     padding: 5px;
-    margin:15px;
-}
-div h3{
-font-family: "bebas neue";
-font-size: 2px;
-color: black;
-background-color: #e8a197;
-text-align: center;
-height: 35px;
-width: 400px;
-padding: 5px;
-margin:15px;
-border-radius: 15px;
-}
-.lista-servicios{
-    list-style-type: none;
-    color: black;
-    background-color: #F4E7EC;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: start;
-    height: 100%;
-    width: 400px;
-    padding: 15px;
     margin: 15px;
+  }
+  div h3 {
+    width: 300px;
+  }
+  .lista-servicios {
+    font-size: 15px;
+    width: 300px;
+  }
+  .boton {
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
     border-radius: 10px;
+  }
+  .textoboton {
+    font-size: 15px;
+  }
 }
-.boton{
-   font-family: "julius";
-   text-decoration: none;
-   background-color: #e8a197;
-   text-align: center;
-   height: 40px;
-   width: 400px;
-   padding: 10px;
-   margin:15px;
-   border-radius: 15px;
-}
-.textoboton{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    padding: 1px;
-    margin: 1px;
-}
-@media  (min-width: 380px) and (max-width: 699px){
-    
 /*pagina servicios*/
-#grilla4{
+@media (min-width: 320px) and (max-width: 699px) {
+  #servicios {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
- #servicios{
-    display: grid;
-    grid-template-areas: 
-    "servicio1"
-    "servicio2" 
-    "servicio3";
+    grid-template-areas: "servicio1" "servicio2" "servicio3";
     grid-template-columns: 1fr;
-    grid-template-rows: 750px 750px 700px;
-    align-self: center;
-}
-.diseño-de-marca{
+    grid-template-rows: 450px 450px 400px;
+    justify-items: center;
+  }
+  #servicios .diseño-de-marca {
     grid-area: servicio1;
-}
-.diseño-de-papeleria{
+  }
+  #servicios .diseño-de-papeleria {
     grid-area: servicio2;
-}
-.diseño-web{
+  }
+  #servicios .diseño-web {
     grid-area: servicio3;
-}
-.imagen-servicio{
-    height: 300px;
-    width: 400px;
+  }
+  .imagen-servicio {
+    height: 200px;
+    width: 300px;
     padding: 5px;
-    margin:15px;
-}
-div h3{
-font-family: "bebas neue";
-font-size: 20px;
-color: black;
-background-color: #e8a197;
-text-align: center;
-height: 30px;
-width: 400px;
-padding: 5px;
-margin:15px;
-border-radius: 15px;
-}
-.lista-servicios{
-    list-style-type: none;
-    color: black;
-    background-color: #F4E7EC;
-    font-family: "julius";
+    margin: 5px;
+  }
+  div h3 {
     font-size: 20px;
+    height: 25px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  .lista-servicios {
+    font-size: 12px;
     text-align: start;
     height: 100%;
-    width: 400px;
-    padding: 15px;
-    margin: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .boton {
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
     border-radius: 10px;
+  }
+  .textoboton {
+    font-size: 15px;
+  }
 }
-.boton{
-   font-family: "julius";
-   text-decoration: none;
-   background-color: #e8a197;
-   text-align: center;
-   height: 40px;
-   width: 400px;
-   padding: 10px;
-   margin:15px;
-   border-radius: 15px;
-}
-.textoboton{
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    padding: 1px;
-    margin: 1px;
-}
-}
+/*****CONTACTO*****/
 /*pagina de contacto*/
-#grilla5{
+#main-contactos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-contacto {
+  font-family: "bebas neue";
+  font-size: 25px;
+  color: black;
+  background-color: #e8a197;
+  text-align: center;
+  height: 35px;
+  width: 350px;
+  padding: 5px;
+  margin: 10px 200px;
+  border-radius: 15px;
+}
+
+.iconos {
+  height: 55px;
+  width: 55px;
+  padding: 5px;
+  margin: 10px;
+}
+
+.lista-contacto {
+  list-style-type: none;
+  color: black;
+  background-color: #F4E7EC;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: start;
+  height: 100%;
+  width: 500px;
+  padding: 15px;
+  margin: 15px 100px;
+  border-radius: 10px;
+}
+
+.texto6 {
+  text-align: start;
+  color: black;
+  text-decoration: none;
+}
+
+form div input {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+
+form div textarea {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: start;
+  height: 100%;
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+
+form div button {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px 50px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+
+iframe {
+  padding: 5px;
+  margin: 5px 80px 20px;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+  #main-contactos {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
-#main-contactos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.titulo-contacto{
-    font-family: "bebas neue";
-    font-size: 25px;
-    color: black;
-    background-color: #e8a197;
-    text-align: center;
+    grid-template-areas: "contacto1" "mapa" "formulario";
+    grid-template-rows: 300px 400px 550px;
+    justify-items: center;
+  }
+  .titulo-contacto {
+    font-size: 20px;
     height: 35px;
     width: 300px;
     padding: 5px;
-    margin:10px 200px;
-    border-radius: 15px;
-}
-.iconos{
-    height: 55px;
-    width: 55px;
-    padding: 5px;
     margin: 10px;
-}
-.lista-contacto{
+    border-radius: 10px;
+  }
+  .iconos {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .lista-contacto {
     list-style-type: none;
     color: black;
     background-color: #F4E7EC;
     font-family: "julius";
-    font-size: 20px;
+    font-size: 12px;
     text-align: start;
     height: 100%;
-    width: 500px;
+    width: 300px;
     padding: 15px;
-    margin: 15px 100px;
-    border-radius: 10px;
-}
-.texto6{
-    text-align: start;
-    color: black;
-    text-decoration: none;
-}
-form div input {
-    background-color: #e8a197;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: center;
-    height: 100%;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px;
-    border-radius: 10px;
-    border: #e8a197;
-}
-form div textarea{
-    background-color: #e8a197;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: start;
-    height: 100%;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px;
-    border-radius: 10px;
-    border: #e8a197;
-}
-form div button{
-    background-color:#e8a197;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: center;
-    height: 100%;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px 50px;
-    border-radius: 10px;
-    border: #e8a197;
-}
-iframe{
-    padding: 5px;
-    margin: 5px 80px 20px;
-}
-@media  (min-width: 380px) and (max-width: 699px){
-    /*pagina de contacto*/
-#grilla5{
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-}
-.header {
-    grid-area: header;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-}
-#main-contactos{
-    display: grid;
-    grid-template-areas: 
-    "contacto1"
-    "mapa"
-    "formulario";
-    grid-template-rows: 500px 500px 650px ;
-    justify-items: center;
-}
-.titulo-contacto{
-    font-family: "bebas neue";
-    font-size: 25px;
-    color: black;
-    background-color: #e8a197;
-    text-align: center;
-    height: 35px;
-    width: 350px;
-    padding: 5px;
-    margin:10px 50px;
-    border-radius: 15px;
-}
-.iconos{
-    height: 35px;
-    width: 35px;
-    padding: 5px;
     margin: 10px;
-}
-.lista-contacto{
-    list-style-type: none;
-    color: black;
-    background-color: #F4E7EC;
-    font-family: "julius";
-    font-size: 15px;
-    text-align: start;
-    height: 100%;
-    width: 350px;
-    padding: 15px;
-    margin: 10px 50px;
     border-radius: 10px;
-}
-.texto6{
+  }
+  .texto6 {
     text-align: start;
     color: black;
     text-decoration: none;
-}
-form div input {
+  }
+  form div input {
     background-color: #e8a197;
     font-family: "julius";
     font-size: 20px;
     text-align: center;
     height: 100%;
-    width: 350px;
+    width: 300px;
     padding: 5px;
-    margin: 5px 50px;
+    margin: 5px;
     border-radius: 10px;
     border: #e8a197;
-}
-form div textarea{
+  }
+  form div textarea {
     background-color: #e8a197;
     font-family: "julius";
     font-size: 20px;
     text-align: start;
     height: 100%;
-    width: 350px;
+    width: 300px;
     padding: 5px;
-    margin: 5px 50px;
+    margin: 5px;
     border-radius: 10px;
     border: #e8a197;
-}
-form div button{
-    background-color:#e8a197;
+  }
+  form div button {
+    background-color: #e8a197;
     font-family: "julius";
     font-size: 20px;
     text-align: center;
     height: 100%;
-    width: 350px;
+    width: 300px;
     padding: 5px;
-    margin: 5px 50px 25px;
+    margin: 5px;
     border-radius: 10px;
     border: #e8a197;
-}
-iframe{
-    height: 300px;
-    width: 350px;
+  }
+  iframe {
+    height: 250px;
+    width: 300px;
     padding: 5px;
-    margin: 5px 40px; 
+    margin: 5px;
+  }
 }
-}
+
+/*# sourceMappingURL=estilos.css.map */

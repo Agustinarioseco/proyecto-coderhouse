@@ -1,0 +1,113 @@
+/******INDEX******/
+ /*menu de incio*/
+ #header{
+    overflow: hidden;
+    background-color: #F4E7EC;
+    display: grid;
+    grid-template-areas: 
+    "imagen-logo menu";
+    grid-template-columns: 140px 1fr;
+    grid-template-rows: 135px;
+}
+.imagen-logo{
+    grid-area: imagen-logo;
+    background-color:#F4E7EC;
+    height: 130px;
+    width: 130px;
+    padding: 2px;
+    margin: 2px;
+}
+.menu{
+    overflow: hidden;
+    grid-area: menu;
+    text-decoration: none;
+    list-style-type: none;
+    height: 140px;
+    padding: 40px 10px;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .textomenu{
+       font-family: "bebas neue";
+       font-size: 25px;
+       padding: 40px 10px;
+       margin: 1px;
+       text-decoration: none;
+       color: #918f91;
+    }
+    a:hover{
+       font-weight: lighter;
+       padding: 8px;
+       background-color: #f6dce6;
+       color: #918f91;
+    }
+}
+ /*frase inicio*/
+main div h2{
+    overflow: hidden;
+    font-family: "julius";
+    color: black;
+    font-size: 30px;
+    background-color: $color-listas;
+    opacity: 70%;
+    text-align: center;
+    height: 100px;
+    padding: 30px;
+    margin: 25px 30px;
+    border-radius: 30px;
+    a{
+      color: black;
+      font-family: "julius";
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      height: 40px;
+      padding: 5px;
+      margin: 5px;
+    }
+}
+ /*listas de la pagina de incio*/
+.listainicio{
+    background-color: $color-listas;
+    opacity: 70%;
+    text-align: center;
+    height: 100px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 30px;
+}
+ /*pie de pagina*/
+footer{
+    overflow: hidden;
+    background-color: #F4E7EC;
+    opacity: 80%;
+    h6{
+      font-family: "bebas neue";
+      color: #918f91;
+      text-align: center;
+      width: 100%;
+      font-size: 45px;
+      padding: 10px;
+      margin: 10px;
+    }
+    .footerr{
+      height: 45px;
+      width: 45px;
+    }
+    .redesfooter{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .pie-de-pagina{
+      font-family: "julius";
+      color: black;
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      padding: 30px 5px 5px;
+      margin: 10px;
+    }
+}

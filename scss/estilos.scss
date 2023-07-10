@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../img/fondo1.png);
+    background-size: cover;
+}
+/*maqueta pagina principal*/
+  #grilla{
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns:100%;
+    .header {
+    grid-area: header;
+    }
+   .main{
+    grid-area: main;
+   }
+   .footer{
+    grid-area: footer;
+    }
+   }
+@import "fonts";
+@import "variables";   
+/*****INDEX*****/
+@import "inicio";
+@import "indexmobile";
+/*****SOBRE MI*****/
+@import "sobremi";
+@import "sobremimobile";
+/*****PROYECTOS*****/
+@import "proyecto";
+@import "proyectomedia";
+@import "proyectomobile";
+/*****SERVICIOS*****/
+@import "servicios";
+@import "serviciosmedia";
+@import "serviciosmobile";
+/*****CONTACTO*****/
+@import "contacto";
+@import "contactomobile";

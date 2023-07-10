@@ -1,0 +1,55 @@
+/*pagina servicios*/
+@media  (min-width: 320px) and (max-width: 699px){
+    #servicios{
+       display: grid;
+       grid-template-areas: 
+       "servicio1"
+       "servicio2" 
+       "servicio3";
+       grid-template-columns: 1fr;
+       grid-template-rows: 450px 450px 400px;
+       justify-items: center;
+       .diseño-de-marca{
+         grid-area: servicio1;
+       }
+       .diseño-de-papeleria{
+          grid-area: servicio2;  
+       }
+       .diseño-web{
+          grid-area: servicio3;
+       }
+   }
+   .imagen-servicio{
+       height: 200px;
+       width: 300px;
+       padding:5px;
+       margin:5px;
+   }
+   div h3{
+   font-size: 20px;
+   height: 25px;
+   width: 300px;
+   padding:5px;
+   margin:5px;
+   border-radius:10px;
+   }
+   .lista-servicios{
+       font-size: 12px;
+       text-align: start;
+       height: 100%;
+       width: 300px;
+       padding:5px;
+       margin:5px;
+       border-radius:5px;
+   }
+   .boton{
+      height: 30px;
+      width: 300px;
+      padding:5px;
+      margin:5px;
+      border-radius: 10px;
+   }
+   .textoboton{
+       font-size: 15px;
+   }
+   }
