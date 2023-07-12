@@ -19,7 +19,7 @@
     }
 /*menu de incio*/
    #header{
-       background-color: #F4E7EC;
+       background-color:$fondos-textos;
        width: 100%;
        display: grid;
        grid-template-areas: 
@@ -32,7 +32,7 @@
           grid-area: imagen-logo; 
         }
         .imagen-logo{
-          background-color:#F4E7EC;
+          background-color:$fondos-textos;
           height: 120px;
           width: 120px;
           padding: 5px 1px 1px;

@@ -9,7 +9,7 @@
     font-family: "bebas neue";
     font-size: 25px;
     color: black;
-    background-color: #e8a197;
+    background-color: $color-listas;
     text-align: center;
     height: 35px;
     width: 350px;
@@ -26,7 +26,7 @@
 .lista-contacto{
     list-style-type: none;
     color: black;
-    background-color: #F4E7EC;
+    background-color: $fondos-textos;
     font-family: "julius";
     font-size: 20px;
     text-align: start;
@@ -42,7 +42,7 @@
     text-decoration: none;
 }
 form div input {
-    background-color: #e8a197;
+    background-color: $color-listas;
     font-family: "julius";
     font-size: 20px;
     text-align: center;
@@ -51,10 +51,10 @@ form div input {
     padding: 5px;
     margin: 5px 100px;
     border-radius: 10px;
-    border: #e8a197;
+    border: $color-listas;
 }
 form div textarea{
-    background-color: #e8a197;
+    background-color: $color-listas;
     font-family: "julius";
     font-size: 20px;
     text-align: start;
@@ -63,10 +63,10 @@ form div textarea{
     padding: 5px;
     margin: 5px 100px;
     border-radius: 10px;
-    border: #e8a197;
+    border: $color-listas;
 }
 form div button{
-    background-color:#e8a197;
+    background-color:$color-listas;
     font-family: "julius";
     font-size: 20px;
     text-align: center;
@@ -75,7 +75,7 @@ form div button{
     padding: 5px;
     margin: 5px 100px;
     border-radius: 10px;
-    border: #e8a197;
+    border: $color-listas;
 }
 iframe{
     height: 440px;

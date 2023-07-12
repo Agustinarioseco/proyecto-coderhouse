@@ -30,7 +30,7 @@ div h4{
     font-family: "bebas neue";
     font-size: 30px;
     color: black;
-    background-color: #e8a197;
+    background-color: $color-listas;
     text-align: center;
     height: 40px;
     width: 350px;
@@ -48,7 +48,7 @@ div p{
     font-family: "julius";
     font-size: 15px;
     color: black;
-    background-color:#F4E7EC;
+    background-color:$fondos-textos;
     text-align: center;
     height: 350px;
     width: 350px;

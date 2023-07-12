@@ -26,7 +26,7 @@ div h3{
 font-family: "bebas neue";
 font-size: 20px;
 color: black;
-background-color: #e8a197;
+background-color: $color-listas;
 text-align: center;
 height: 35px;
 width: 400px;
@@ -37,7 +37,7 @@ border-radius: 15px;
 .lista-servicios{
     list-style-type: none;
     color: black;
-    background-color: #F4E7EC;
+    background-color: $fondos-textos;
     font-family: "julius";
     font-size: 20px;
     text-align: start;
@@ -50,7 +50,7 @@ border-radius: 15px;
 .boton{
       font-family: "julius";
       text-decoration: none;
-      background-color: #e8a197;
+      background-color: $color-listas;
       text-align: center;
       height: 40px;
       width: 400px;

@@ -2,7 +2,7 @@
  /*menu de incio*/
  #header{
     overflow: hidden;
-    background-color: #F4E7EC;
+    background-color:$fondos-textos;
     display: grid;
     grid-template-areas: 
     "imagen-logo menu";
@@ -11,7 +11,7 @@
 }
 .imagen-logo{
     grid-area: imagen-logo;
-    background-color:#F4E7EC;
+    background-color:$fondos-textos;
     height: 130px;
     width: 130px;
     padding: 2px;
@@ -81,7 +81,7 @@ main div h2{
  /*pie de pagina*/
 footer{
     overflow: hidden;
-    background-color: #F4E7EC;
+    background-color:$fondos-textos;
     opacity: 80%;
     h6{
       font-family: "bebas neue";
