@@ -1,25 +1,33 @@
 /******SOBRE MI******/
 /*contenido del main*/
-#sobremi-main{
-    overflow-x: hidden;
-    display: grid;
-    grid-template-areas: 
-    "carrusel parrafo";
-    grid-template-columns: repeat(2 1fr);
+main{
+   #sobremi-main{
+      overflow-x: hidden;
+      display: grid;
+      grid-template-areas: 
+      "carrusel parrafo";
+      grid-template-columns: repeat(2 1fr);
+    } 
+    div{
+     .carrusel{
+         grid-area: carrusel;
+         margin: 10px;
+        }
+    }
+    section{
+        .parrafo{
+         overflow: hidden;
+         grid-area: parrafo;
+         font-family: "julius";
+         color: black;
+         background-color: $fondos-textos;
+         font-size: 20px;
+         width: 700px;
+         padding: 5px;
+         margin:10px;
+         border-radius: 25px;
+        }
+            
+    }
 }
-.carrusel{
-    grid-area: carrusel;
-    margin: 10px;
-}
-section article p{
-    overflow: hidden;
-    grid-area: parrafo;
-    font-family: "julius";
-    color: black;
-    background-color: $fondos-textos;
-    font-size: 20px;
-    width: 700px;
-    padding: 5px;
-    margin:10px;
-    border-radius: 25px;
-}  
+

@@ -26,7 +26,8 @@ body{
     }
    }
 @import "fonts";
-@import "variables";   
+@import "maps";
+@import "variables_extend_mixins";   
 /*****INDEX*****/
 @import "inicio";
 @import "indexmobile";
@@ -34,9 +35,9 @@ body{
 @import "sobremi";
 @import "sobremimobile";
 /*****PROYECTOS*****/
-@import "proyecto";
-@import "proyectomedia";
 @import "proyectomobile";
+@import "proyectomedia";
+@import "proyecto";
 /*****SERVICIOS*****/
 @import "servicios";
 @import "serviciosmedia";

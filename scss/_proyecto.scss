@@ -1,58 +1,72 @@
 /*pagina proyectos*/
-#pagina-proyecto{
-    display: grid;
-    grid-template-areas: 
-    "proyecto1 proyecto2 proyecto3" 
-    "proyecto4 proyecto5 proyecto6" ;
-    grid-template-columns:repeat(3 1fr);
-    grid-template-rows: (2 1fr) ;
-    justify-items: center;
-    .proyecto1{
-     grid-area: proyecto1;
+main{
+  section{
+    #pagina-proyecto{
+      display: grid;
+      grid-template-areas: 
+      "proyecto1 proyecto2 proyecto3" 
+      "proyecto4 proyecto5 proyecto6" ;
+      grid-template-columns:repeat(3 1fr);
+      grid-template-rows: (2 1fr) ;
+      justify-items: center;
+      .proyecto1{
+       grid-area: proyecto1;
+      }
+      .proyecto2{
+       grid-area: proyecto2;
+      }
+      .proyecto3{
+       grid-area: proyecto3;
+      }
+      .proyecto4{
+        grid-area: proyecto4;
+      }
+      .proyecto5{
+        grid-area: proyecto5;
+      }
+      .proyecto6{
+        grid-area: proyecto6;
+      }
     }
-    .proyecto2{
-     grid-area: proyecto2;
+    div{
+       h4{
+        font-family: "bebas neue";
+        font-size: 30px;
+        color: black;
+        background-color: $color-listas;
+        text-align: center;
+        height: 40px;
+        width: 350px;
+        padding: 5px;
+        margin:10px 50px;
+        border-radius: 15px;
+      }
     }
-    .proyecto3{
-     grid-area: proyecto3;
+    div{
+      .carrusel-imagen{
+       height: 350px;
+       width: 350px;
+       padding: 10px;
+       margin:10px 50px;
+      } 
     }
-    .proyecto4{
-      grid-area: proyecto4;
+    div{
+      p{
+        .texto-proyecto{
+          font-family: "julius";
+         font-size: 15px;
+         color: black;
+         background-color:$fondos-textos;
+         text-align: center;
+         height: 350px;
+         width: 350px;
+         padding: 5px;
+         margin: 10px 50px;
+         border-radius: 15px;
+        }
+      }
     }
-    .proyecto5{
-      grid-area: proyecto5;
-    }
-    .proyecto6{
-      grid-area: proyecto6;
-    }
+  }
 }
-div h4{
-    font-family: "bebas neue";
-    font-size: 30px;
-    color: black;
-    background-color: $color-listas;
-    text-align: center;
-    height: 40px;
-    width: 350px;
-    padding: 5px;
-    margin:10px 50px;
-    border-radius: 15px;
-}
-.carrusel-imagen{
-    height: 350px;
-    width: 350px;
-    padding: 10px;
-    margin:10px 50px;
-}
-.texto-proyecto{
-    font-family: "julius";
-    font-size: 15px;
-    color: black;
-    background-color:$fondos-textos;
-    text-align: center;
-    height: 350px;
-    width: 350px;
-    padding: 5px;
-    margin: 10px 50px;
-    border-radius: 15px;
-}
+
+

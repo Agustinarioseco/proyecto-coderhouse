@@ -1,0 +1,9 @@
+
+$color-listas: #e8a197; 
+$fondos-textos: #F4E7EC;
+
+@mixin flex-row-align{
+    display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+}

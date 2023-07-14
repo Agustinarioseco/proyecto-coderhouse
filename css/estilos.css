@@ -97,17 +97,6 @@ main div h2 {
   margin: 25px 30px;
   border-radius: 30px;
 }
-main div h2 a {
-  color: black;
-  font-family: "julius";
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  height: 40px;
-  padding: 5px;
-  margin: 5px;
-}
-
 /*listas de la pagina de incio*/
 .listainicio {
   background-color: #e8a197;
@@ -117,6 +106,16 @@ main div h2 a {
   padding: 30px;
   margin: 50px;
   border-radius: 30px;
+}
+main div h2 a {
+  color: black;
+  font-family: "julius";
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
 }
 
 /*pie de pagina*/
@@ -231,7 +230,7 @@ footer .pie-de-pagina {
     height: 35px;
     width: 35px;
   }
-  footer #pie-de-pagina {
+  footer .pie-de-pagina {
     font-size: 10px;
     padding: 10px 5px 5px;
     margin: 10px 10px 5px;
@@ -386,7 +385,7 @@ div h4 {
     padding: 10px;
     margin: 10px 25px;
   }
-  div p {
+  .texto-proyecto {
     font-size: 15px;
     height: 410px;
     width: 300px;
@@ -435,7 +434,7 @@ div h4 {
     padding: 10px;
     margin: 10px;
   }
-  div p {
+  .texto-proyecto {
     font-size: 12px;
     color: black;
     height: 100%;

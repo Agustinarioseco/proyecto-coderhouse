@@ -1,85 +1,80 @@
 @media  (min-width: 320px) and (max-width: 699px){
-    #main-contactos{
-        display: grid;
-        grid-template-areas: 
-        "contacto1"
-        "mapa"
-        "formulario";
-        grid-template-rows: 300px 400px 550px ;
-        justify-items: center;
+    main{
+        section{
+            #main-contactos{
+                display: grid;
+                grid-template-areas: 
+                "contacto1"
+                "mapa"
+                "formulario";
+                grid-template-rows: 300px 400px 550px ;
+                justify-items: center;
+            }
+        }
+        div{
+            h4{
+                .titulo-contacto{
+                    font-size: 20px;
+                    height: 35px;
+                    width: 300px;
+                    padding: 5px;
+                    margin:10px;
+                    border-radius:10px;
+                }
+            }
+        }
+        div{
+            nav{
+                ul{
+                    .lista-contacto{
+                        font-size: 12px;
+                        width: 300px;
+                        padding: 15px;
+                        margin: 10px;
+                        .iconos{
+                            height:30px;
+                            width:30px;
+                            padding:5px;
+                            margin:5px;
+                        }
+                        .texto6{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        div{
+            iframe{
+                height: 250px;
+                width: 300px;
+                padding: 5px;
+                margin: 5px; 
+            }
+        }
+        div{
+            form{
+                div{
+                    input{
+                        font-size: 15px;
+                        width: 300px;
+                        padding: 5px;
+                        margin: 5px;
+                    }
+                    textarea{
+                        font-size: 15px;
+                        width: 300px;
+                        padding: 5px;
+                        margin: 5px;
+                    }
+                    button{
+                        font-size: 15px;
+                        width: 300px;
+                        padding: 5px;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
     }
-    .titulo-contacto{
-        font-size: 20px;
-        height: 35px;
-        width: 300px;
-        padding: 5px;
-        margin:10px;
-        border-radius:10px;
-    }
-    .iconos{
-        height:30px;
-        width:30px;
-        padding:5px;
-        margin:5px;
-    }
-    .lista-contacto{
-        list-style-type: none;
-        color: black;
-        background-color: #F4E7EC;
-        font-family: "julius";
-        font-size: 12px;
-        text-align: start;
-        height: 100%;
-        width: 300px;
-        padding: 15px;
-        margin: 10px;
-        border-radius: 10px;
-    }
-    .texto6{
-        text-align: start;
-        color: black;
-        text-decoration: none;
-    }
-    form div input {
-        background-color: #e8a197;
-        font-family: "julius";
-        font-size: 20px;
-        text-align: center;
-        height: 100%;
-        width: 300px;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 10px;
-        border: #e8a197;
-    }
-    form div textarea{
-        background-color: #e8a197;
-        font-family: "julius";
-        font-size: 20px;
-        text-align: start;
-        height: 100%;
-        width: 300px;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 10px;
-        border: #e8a197;
-    }
-    form div button{
-        background-color:#e8a197;
-        font-family: "julius";
-        font-size: 20px;
-        text-align: center;
-        height: 100%;
-        width: 300px;
-        padding: 5px;
-        margin: 5px;
-        border-radius: 10px;
-        border: #e8a197;
-    }
-    iframe{
-        height: 250px;
-        width: 300px;
-        padding: 5px;
-        margin: 5px; 
-    }
-    }
+}

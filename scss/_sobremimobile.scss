@@ -1,23 +1,30 @@
 @media (min-width: 320px) and (max-width: 699px){
-    #sobremi-main{
-        display: grid;
-        grid-template-areas: 
-        "carrusel" 
-        "parrafo";
-        grid-template-rows: repeat(2 1fr);
-        justify-items: center;
+    main{
+        #sobremi-main{
+         display: grid;
+         grid-template-areas: 
+         "carrusel" 
+         "parrafo";
+         grid-template-rows: repeat(2 1fr);
+         justify-items: center;
+        }
+        div{
+          .carrusel{
+             grid-area: carrusel;
+             width: 300px;
+             margin: 10px;
+            } 
+        }
+        section{
+            .parrafo{
+             grid-area: parrafo;
+             font-size: 12px;
+             width: 300px;
+             padding: 5px;
+             margin:5px;
+             border-radius:15px; 
+            }   
+        }
+   
     }
-    section article p{
-        grid-area: parrafo;
-        font-size: 12px;
-        width: 300px;
-        padding: 5px;
-        margin:5px;
-        border-radius:15px;
-    }    
-    .carrusel{
-       grid-area: carrusel;
-       width: 300px;
-       margin: 10px;
-    }
-    }
+}

@@ -37,7 +37,7 @@ body {
 /*****INDEX*****/
 /******INDEX******/
 /*menu de incio*/
-#header {
+header #header {
   overflow: hidden;
   background-color: #F4E7EC;
   display: grid;
@@ -45,8 +45,7 @@ body {
   grid-template-columns: 140px 1fr;
   grid-template-rows: 135px;
 }
-
-.imagen-logo {
+header section .imagen-logo {
   grid-area: imagen-logo;
   background-color: #F4E7EC;
   height: 130px;
@@ -54,8 +53,7 @@ body {
   padding: 2px;
   margin: 2px;
 }
-
-.menu {
+header nav ul .menu {
   overflow: hidden;
   grid-area: menu;
   text-decoration: none;
@@ -68,7 +66,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.menu .textomenu {
+header nav ul .menu .textomenu {
   font-family: "bebas neue";
   font-size: 25px;
   padding: 40px 10px;
@@ -76,7 +74,7 @@ body {
   text-decoration: none;
   color: #918f91;
 }
-.menu a:hover {
+header nav ul .menu a:hover {
   font-weight: lighter;
   padding: 8px;
   background-color: #f6dce6;
@@ -84,20 +82,18 @@ body {
 }
 
 /*frase inicio*/
-main div h2 {
+/*listas de la pagina de incio*/
+main nav div .listainicio, main nav div h2 {
   overflow: hidden;
-  font-family: "julius";
-  color: black;
-  font-size: 30px;
   background-color: #e8a197;
   opacity: 70%;
   text-align: center;
   height: 100px;
   padding: 30px;
-  margin: 25px 30px;
+  margin: 25px 50px;
   border-radius: 30px;
 }
-main div h2 a {
+main nav div .listainicio a, main nav div h2 a {
   color: black;
   font-family: "julius";
   font-size: 30px;
@@ -108,24 +104,13 @@ main div h2 a {
   margin: 5px;
 }
 
-/*listas de la pagina de incio*/
-.listainicio {
-  background-color: #e8a197;
-  opacity: 70%;
-  text-align: center;
-  height: 100px;
-  padding: 30px;
-  margin: 50px;
-  border-radius: 30px;
-}
-
 /*pie de pagina*/
 footer {
   overflow: hidden;
   background-color: #F4E7EC;
   opacity: 80%;
 }
-footer h6 {
+footer div h6 {
   font-family: "bebas neue";
   color: #918f91;
   text-align: center;
@@ -134,16 +119,16 @@ footer h6 {
   padding: 10px;
   margin: 10px;
 }
-footer .footerr {
-  height: 45px;
-  width: 45px;
-}
-footer .redesfooter {
+footer div .redesfooter {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-footer .pie-de-pagina {
+footer div .redesfooter .footerr {
+  height: 45px;
+  width: 45px;
+}
+footer div .pie-de-pagina {
   font-family: "julius";
   color: black;
   font-size: 20px;
@@ -154,23 +139,23 @@ footer .pie-de-pagina {
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
-  #grilla {
+  body #grilla {
     overflow-x: hidden;
     display: grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-columns: 100%;
   }
-  #grilla .header {
+  body #grilla .header {
     grid-area: header;
   }
-  #grilla .main {
+  body #grilla .main {
     grid-area: main;
   }
-  #grilla .footer {
+  body #grilla .footer {
     grid-area: footer;
   }
   /*menu de incio*/
-  #header {
+  header #header {
     background-color: #F4E7EC;
     width: 100%;
     display: grid;
@@ -179,29 +164,27 @@ footer .pie-de-pagina {
     grid-template-rows: 120px 40px;
     justify-items: center;
   }
-  #header .imagen-logo {
+  header section .imagen-logo {
     grid-area: imagen-logo;
-  }
-  #header .imagen-logo {
     background-color: #F4E7EC;
     height: 120px;
     width: 120px;
     padding: 5px 1px 1px;
   }
-  #header .menu {
+  header nav ul .menu {
     grid-area: menú;
     justify-items: start;
     height: 40px;
     padding: 15px;
     margin: 1px 5px;
   }
-  #header .menu .textomenu {
+  header nav ul .menu .textomenu {
     grid-area: menu;
     justify-items: start;
     font-size: 12px;
     padding: 5px 9px;
   }
-  #header .menu a:hover {
+  header nav ul .menu a:hover {
     padding: 5px;
   }
   /*frase inicio*/
@@ -212,27 +195,27 @@ footer .pie-de-pagina {
     margin: 15px 20px;
     border-radius: 15px;
   }
-  main div h2 a {
-    font-size: 20px;
-    height: 30px;
-  }
   /*listas de la pagina de incio*/
-  .listainicio {
+  main nav div .listainicio, main nav div h2 {
     height: 60px;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
   }
+  main nav div .listainicio a, main nav div h2 a {
+    font-size: 20px;
+    height: 30px;
+  }
   /*pie de pagina*/
-  footer h6 {
+  footer div h6 {
     font-size: 25px;
   }
-  footer .footerr {
+  footer div .redesfooter .footerr {
     height: 35px;
     width: 35px;
   }
-  footer .pie-de-pagina {
-    font-size: 10px;
+  footer div .pie-de-pagina {
+    font-size: 12px;
     padding: 10px 5px 5px;
     margin: 10px 10px 5px;
   }
@@ -240,19 +223,17 @@ footer .pie-de-pagina {
 /*****SOBRE MI*****/
 /******SOBRE MI******/
 /*contenido del main*/
-#sobremi-main {
+main #sobremi-main {
   overflow-x: hidden;
   display: grid;
   grid-template-areas: "carrusel parrafo";
   grid-template-columns: repeat(2 1fr);
 }
-
-.carrusel {
+main div .carrusel {
   grid-area: carrusel;
   margin: 10px;
 }
-
-section article p {
+main section .parrafo {
   overflow: hidden;
   grid-area: parrafo;
   font-family: "julius";
@@ -266,13 +247,18 @@ section article p {
 }
 
 @media (min-width: 320px) and (max-width: 699px) {
-  #sobremi-main {
+  main #sobremi-main {
     display: grid;
     grid-template-areas: "carrusel" "parrafo";
     grid-template-rows: repeat(2 1fr);
     justify-items: center;
   }
-  section article p {
+  main div .carrusel {
+    grid-area: carrusel;
+    width: 300px;
+    margin: 10px;
+  }
+  main section .parrafo {
     grid-area: parrafo;
     font-size: 12px;
     width: 300px;
@@ -280,41 +266,133 @@ section article p {
     margin: 5px;
     border-radius: 15px;
   }
-  .carrusel {
-    grid-area: carrusel;
-    width: 300px;
-    margin: 10px;
-  }
 }
 /*****PROYECTOS*****/
+@media (min-width: 320px) and (max-width: 699px) {
+  main section #pagina-proyecto {
+    display: grid;
+    grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 6 1fr;
+    justify-items: center;
+  }
+  main section #pagina-proyecto .proyecto1 {
+    grid-area: proyecto1;
+  }
+  main section #pagina-proyecto .proyecto2 {
+    grid-area: proyecto2;
+  }
+  main section #pagina-proyecto .proyecto3 {
+    grid-area: proyecto3;
+  }
+  main section #pagina-proyecto .proyecto4 {
+    grid-area: proyecto4;
+  }
+  main section #pagina-proyecto .proyecto5 {
+    grid-area: proyecto5;
+  }
+  main section #pagina-proyecto .proyecto6 {
+    grid-area: proyecto6;
+  }
+  main section div h4 {
+    font-size: 20px;
+    width: 300px;
+    height: 25px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main section div .carrusel-imagen {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+  main section div p .texto-proyecto {
+    font-size: 12px;
+    color: black;
+    height: 100%;
+    width: 300px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  main section #pagina-proyecto {
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 3 1fr;
+    justify-items: center;
+  }
+  main section #pagina-proyecto .proyecto1 {
+    grid-area: proyecto1;
+  }
+  main section #pagina-proyecto .proyecto2 {
+    grid-area: proyecto2;
+  }
+  main section #pagina-proyecto .proyecto3 {
+    grid-area: proyecto3;
+  }
+  main section #pagina-proyecto .proyecto4 {
+    grid-area: proyecto4;
+  }
+  main section #pagina-proyecto .proyecto5 {
+    grid-area: proyecto5;
+  }
+  main section #pagina-proyecto .proyecto6 {
+    grid-area: proyecto6;
+  }
+  main section div h4 {
+    font-size: 25px;
+    height: 35px;
+    width: 300px;
+    margin: 10px 25px;
+    border-radius: 10px;
+  }
+  main section div .carrusel-imagen {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 25px;
+  }
+  main section div p .texto-proyecto {
+    font-size: 15px;
+    height: 410px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px 25px;
+    border-radius: 10px;
+  }
+}
 /*pagina proyectos*/
-#pagina-proyecto {
+main section #pagina-proyecto {
   display: grid;
   grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 2 1fr;
   justify-items: center;
 }
-#pagina-proyecto .proyecto1 {
+main section #pagina-proyecto .proyecto1 {
   grid-area: proyecto1;
 }
-#pagina-proyecto .proyecto2 {
+main section #pagina-proyecto .proyecto2 {
   grid-area: proyecto2;
 }
-#pagina-proyecto .proyecto3 {
+main section #pagina-proyecto .proyecto3 {
   grid-area: proyecto3;
 }
-#pagina-proyecto .proyecto4 {
+main section #pagina-proyecto .proyecto4 {
   grid-area: proyecto4;
 }
-#pagina-proyecto .proyecto5 {
+main section #pagina-proyecto .proyecto5 {
   grid-area: proyecto5;
 }
-#pagina-proyecto .proyecto6 {
+main section #pagina-proyecto .proyecto6 {
   grid-area: proyecto6;
 }
-
-div h4 {
+main section div h4 {
   font-family: "bebas neue";
   font-size: 30px;
   color: black;
@@ -326,15 +404,13 @@ div h4 {
   margin: 10px 50px;
   border-radius: 15px;
 }
-
-.carrusel-imagen {
+main section div .carrusel-imagen {
   height: 350px;
   width: 350px;
   padding: 10px;
   margin: 10px 50px;
 }
-
-.texto-proyecto {
+main section div p .texto-proyecto {
   font-family: "julius";
   font-size: 15px;
   color: black;
@@ -347,131 +423,31 @@ div h4 {
   border-radius: 15px;
 }
 
-@media (min-width: 700px) and (max-width: 1200px) {
-  #pagina-proyecto {
-    display: grid;
-    grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6";
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: 3 1fr;
-    justify-items: center;
-  }
-  #pagina-proyecto .proyecto1 {
-    grid-area: proyecto1;
-  }
-  #pagina-proyecto .proyecto2 {
-    grid-area: proyecto2;
-  }
-  #pagina-proyecto .proyecto3 {
-    grid-area: proyecto3;
-  }
-  #pagina-proyecto .proyecto4 {
-    grid-area: proyecto4;
-  }
-  #pagina-proyecto .proyecto5 {
-    grid-area: proyecto5;
-  }
-  #pagina-proyecto .proyecto6 {
-    grid-area: proyecto6;
-  }
-  div h4 {
-    font-size: 25px;
-    height: 35px;
-    width: 300px;
-    margin: 10px 25px;
-    border-radius: 10px;
-  }
-  .carrusel-imagen {
-    height: 300px;
-    width: 300px;
-    padding: 10px;
-    margin: 10px 25px;
-  }
-  .texto-proyecto {
-    font-size: 15px;
-    height: 410px;
-    width: 300px;
-    padding: 5px;
-    margin: 10px 25px;
-    border-radius: 10px;
-  }
-}
-@media (min-width: 320px) and (max-width: 699px) {
-  #pagina-proyecto {
-    display: grid;
-    grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: 6 1fr;
-    justify-items: center;
-  }
-  #pagina-proyecto .proyecto1 {
-    grid-area: proyecto1;
-  }
-  #pagina-proyecto .proyecto2 {
-    grid-area: proyecto2;
-  }
-  #pagina-proyecto .proyecto3 {
-    grid-area: proyecto3;
-  }
-  #pagina-proyecto .proyecto4 {
-    grid-area: proyecto4;
-  }
-  #pagina-proyecto .proyecto5 {
-    grid-area: proyecto5;
-  }
-  #pagina-proyecto .proyecto6 {
-    grid-area: proyecto6;
-  }
-  div h4 {
-    font-size: 20px;
-    width: 300px;
-    height: 25px;
-    padding: 3px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  .carrusel-imagen {
-    height: 300px;
-    width: 300px;
-    padding: 10px;
-    margin: 10px;
-  }
-  .texto-proyecto {
-    font-size: 12px;
-    color: black;
-    height: 100%;
-    width: 300px;
-    padding: 3px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-}
 /*****SERVICIOS*****/
 /*pagina servicios*/
-#servicios {
+main section #servicios {
   display: grid;
   grid-template-areas: "servicio1 servicio2 servicio3";
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 100%;
   align-self: center;
 }
-#servicios .diseño-de-marca {
+main section #servicios .diseño-de-marca {
   grid-area: servicio1;
 }
-#servicios .diseño-de-papeleria {
+main section #servicios .diseño-de-papeleria {
   grid-area: servicio2;
 }
-#servicios .diseño-web {
+main section #servicios .diseño-web {
   grid-area: servicio3;
 }
-
-.imagen-servicio {
+main section div .imagen-servicio {
   height: 300px;
   width: 400px;
   padding: 5px;
   margin: 15px;
 }
-
-div h3 {
+main section div h3 {
   font-family: "bebas neue";
   font-size: 20px;
   color: black;
@@ -483,8 +459,7 @@ div h3 {
   margin: 15px;
   border-radius: 15px;
 }
-
-.lista-servicios {
+main section div ul .lista-servicios {
   list-style-type: none;
   color: black;
   background-color: #F4E7EC;
@@ -497,8 +472,7 @@ div h3 {
   margin: 15px;
   border-radius: 10px;
 }
-
-.boton {
+main section div .boton {
   font-family: "julius";
   text-decoration: none;
   background-color: #e8a197;
@@ -509,8 +483,7 @@ div h3 {
   margin: 15px;
   border-radius: 15px;
 }
-
-.textoboton {
+main section div .boton .textoboton {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -519,71 +492,71 @@ div h3 {
 }
 
 @media (min-width: 700px) and (max-width: 1200px) {
-  #servicios {
+  main section #servicios {
     display: grid;
     grid-template-areas: "servicio1 servicio2 servicio3";
     grid-template-columns: repeat(3 1fr);
     grid-template-rows: 100%;
     align-self: center;
   }
-  #servicios .diseño-de-marca {
+  main section #servicios .diseño-de-marca {
     grid-area: servicio1;
   }
-  #servicios .diseño-de-papeleria {
+  main section #servicios .diseño-de-papeleria {
     grid-area: servicio2;
   }
-  #servicios .diseño-web {
+  main section #servicios .diseño-web {
     grid-area: servicio3;
   }
-  .imagen-servicio {
+  main section div .imagen-servicio {
     height: 200px;
     width: 300px;
     padding: 5px;
     margin: 15px;
   }
-  div h3 {
+  main section div h3 {
     width: 300px;
   }
-  .lista-servicios {
+  main section div ul .lista-servicios {
     font-size: 15px;
     width: 300px;
   }
-  .boton {
+  main section div .boton {
     height: 30px;
     width: 300px;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
   }
-  .textoboton {
+  main section div .boton .textoboton {
     font-size: 15px;
   }
 }
 /*pagina servicios*/
 @media (min-width: 320px) and (max-width: 699px) {
-  #servicios {
+  main section #servicios {
     display: grid;
     grid-template-areas: "servicio1" "servicio2" "servicio3";
     grid-template-columns: 1fr;
     grid-template-rows: 450px 450px 400px;
     justify-items: center;
   }
-  #servicios .diseño-de-marca {
+  main section #servicios .diseño-de-marca {
     grid-area: servicio1;
   }
-  #servicios .diseño-de-papeleria {
+  main section #servicios .diseño-de-papeleria {
     grid-area: servicio2;
   }
-  #servicios .diseño-web {
+  main section #servicios .diseño-web {
     grid-area: servicio3;
   }
-  .imagen-servicio {
+  main section div .imagen-servicio {
     height: 200px;
     width: 300px;
     padding: 5px;
     margin: 5px;
   }
-  div h3 {
+  main section div h3 {
     font-size: 20px;
     height: 25px;
     width: 300px;
@@ -591,7 +564,7 @@ div h3 {
     margin: 5px;
     border-radius: 10px;
   }
-  .lista-servicios {
+  main section div ul .lista-servicios {
     font-size: 12px;
     text-align: start;
     height: 100%;
@@ -600,27 +573,26 @@ div h3 {
     margin: 5px;
     border-radius: 5px;
   }
-  .boton {
+  main section div .boton {
     height: 30px;
     width: 300px;
     padding: 5px;
     margin: 5px;
     border-radius: 10px;
   }
-  .textoboton {
+  main section div .boton .textoboton {
     font-size: 15px;
   }
 }
 /*****CONTACTO*****/
 /*pagina de contacto*/
-#main-contactos {
+main section #main-contactos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.titulo-contacto {
+main section div h4 .titulo-contacto {
   font-family: "bebas neue";
   font-size: 25px;
   color: black;
@@ -632,88 +604,79 @@ div h3 {
   margin: 10px 180px;
   border-radius: 15px;
 }
-
-.iconos {
-  height: 55px;
-  width: 55px;
-  padding: 5px;
-  margin: 10px;
-}
-
-.lista-contacto {
+main section div nav ul .lista-contacto {
   list-style-type: none;
-  color: black;
   background-color: #F4E7EC;
   font-family: "julius";
   font-size: 20px;
-  text-align: start;
   height: 100%;
   width: 500px;
   padding: 15px;
   margin: 15px 100px;
   border-radius: 10px;
 }
-
-.texto6 {
+main section div nav ul .lista-contacto .iconos {
+  height: 55px;
+  width: 55px;
+  padding: 5px;
+  margin: 10px;
+}
+main section div nav ul .lista-contacto .texto6 {
   text-align: start;
   color: black;
   text-decoration: none;
 }
-
-form div input {
-  background-color: #e8a197;
-  font-family: "julius";
-  font-size: 20px;
-  text-align: center;
-  height: 100%;
-  width: 500px;
-  padding: 5px;
-  margin: 5px 100px;
-  border-radius: 10px;
-  border: #e8a197;
-}
-
-form div textarea {
-  background-color: #e8a197;
-  font-family: "julius";
-  font-size: 20px;
-  text-align: start;
-  height: 100%;
-  width: 500px;
-  padding: 5px;
-  margin: 5px 100px;
-  border-radius: 10px;
-  border: #e8a197;
-}
-
-form div button {
-  background-color: #e8a197;
-  font-family: "julius";
-  font-size: 20px;
-  text-align: center;
-  height: 100%;
-  width: 500px;
-  padding: 5px;
-  margin: 5px 100px;
-  border-radius: 10px;
-  border: #e8a197;
-}
-
-iframe {
+main section div iframe {
   height: 440px;
   width: 500px;
   padding: 5px;
   margin: 5px 100px;
 }
+main section div form div input {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+main section div form div textarea {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: start;
+  height: 100%;
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+main section div form div button {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 500px;
+  padding: 5px;
+  margin: 5px 100px;
+  border-radius: 10px;
+  border: #e8a197;
+}
 
 @media (min-width: 320px) and (max-width: 699px) {
-  #main-contactos {
+  main section #main-contactos {
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
     grid-template-rows: 300px 400px 550px;
     justify-items: center;
   }
-  .titulo-contacto {
+  main div h4 .titulo-contacto {
     font-size: 20px;
     height: 35px;
     width: 300px;
@@ -721,68 +684,41 @@ iframe {
     margin: 10px;
     border-radius: 10px;
   }
-  .iconos {
+  main div nav ul .lista-contacto {
+    font-size: 12px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+  }
+  main div nav ul .lista-contacto .iconos {
     height: 30px;
     width: 30px;
     padding: 5px;
     margin: 5px;
   }
-  .lista-contacto {
-    list-style-type: none;
-    color: black;
-    background-color: #F4E7EC;
-    font-family: "julius";
+  main div nav ul .lista-contacto .texto6 {
     font-size: 12px;
-    text-align: start;
-    height: 100%;
-    width: 300px;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
   }
-  .texto6 {
-    text-align: start;
-    color: black;
-    text-decoration: none;
-  }
-  form div input {
-    background-color: #e8a197;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: center;
-    height: 100%;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    border: #e8a197;
-  }
-  form div textarea {
-    background-color: #e8a197;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: start;
-    height: 100%;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    border: #e8a197;
-  }
-  form div button {
-    background-color: #e8a197;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: center;
-    height: 100%;
-    width: 300px;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
-    border: #e8a197;
-  }
-  iframe {
+  main div iframe {
     height: 250px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main div form div input {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main div form div textarea {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main div form div button {
+    font-size: 15px;
     width: 300px;
     padding: 5px;
     margin: 5px;

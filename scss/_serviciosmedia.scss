@@ -1,42 +1,56 @@
 @media (min-width:700px) and (max-width: 1200px){
-    #servicios{
-        display: grid;
-        grid-template-areas: 
-        "servicio1 servicio2 servicio3";
-        grid-template-columns: repeat(3 1fr);
-        grid-template-rows: 100%;
-        align-self: center;
-         .diseño-de-marca{
-          grid-area: servicio1;
+    main{
+        section{
+            #servicios{
+                display: grid;
+                grid-template-areas: 
+                "servicio1 servicio2 servicio3";
+                grid-template-columns: repeat(3 1fr);
+                grid-template-rows: 100%;
+                align-self: center;
+                 .diseño-de-marca{
+                  grid-area: servicio1;
+                }
+                .diseño-de-papeleria{
+                   grid-area: servicio2;
+                }
+                .diseño-web{
+                   grid-area: servicio3;
+                }
+            }
+            div{
+                .imagen-servicio{
+                    height: 200px;
+                    width: 300px;
+                    padding:5px;
+                    margin:15px;
+                }
+            }
+            div{
+                h3{
+                    width: 300px;
+                }
+            }
+            div{
+                ul{
+                    .lista-servicios{
+                        font-size: 15px;
+                        width: 300px;
+                    }
+                } 
+            }
+            div{
+                .boton{
+                    height: 30px;
+                    width: 300px;
+                    padding: 5px;
+                    margin:10px;
+                    border-radius:10px;
+                    .textoboton{
+                        font-size: 15px;
+                    }
+                }
+            }
         }
-        .diseño-de-papeleria{
-           grid-area: servicio2;
-        }
-        .diseño-web{
-           grid-area: servicio3;
-        }
     }
-    .imagen-servicio{
-        height: 200px;
-        width: 300px;
-        padding:5px;
-        margin:15px;
-    }
-    div h3{
-    width: 300px;
-    }
-    .lista-servicios{
-        font-size: 15px;
-        width: 300px;
-    }
-    .boton{
-        height: 30px;
-        width: 300px;
-        padding: 5px;
-        margin:10px;
-        border-radius:10px;
-    }
-    .textoboton{
-        font-size: 15px;
-    }
- }
+}

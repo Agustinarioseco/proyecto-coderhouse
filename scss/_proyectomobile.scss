@@ -1,56 +1,69 @@
 @media (min-width: 320px) and (max-width: 699px){
-    #pagina-proyecto{
-        display: grid;
-        grid-template-areas: 
-        "proyecto1" 
-        "proyecto2" 
-        "proyecto3" 
-        "proyecto4"
-        "proyecto5" 
-        "proyecto6" ;
-        grid-template-columns:repeat( 1fr);
-        grid-template-rows: (6 1fr) ;
-        justify-items: center;
-        .proyecto1{
-           grid-area: proyecto1;
-        }
-       .proyecto2{
-           grid-area: proyecto2;
-        }
-        .proyecto3{
-           grid-area: proyecto3;
-        }
-        .proyecto4{
-           grid-area: proyecto4;
-        }
-        .proyecto5{
-          grid-area: proyecto5;
-        }
-        .proyecto6{
-          grid-area: proyecto6;
+    main{
+        section{
+            #pagina-proyecto{
+                display: grid;
+                grid-template-areas: 
+                "proyecto1" 
+                "proyecto2" 
+                "proyecto3" 
+                "proyecto4"
+                "proyecto5" 
+                "proyecto6" ;
+                grid-template-columns:repeat( 1fr);
+                grid-template-rows: (6 1fr) ;
+                justify-items: center;
+                .proyecto1{
+                   grid-area: proyecto1;
+                }
+               .proyecto2{
+                   grid-area: proyecto2;
+                }
+                .proyecto3{
+                   grid-area: proyecto3;
+                }
+                .proyecto4{
+                   grid-area: proyecto4;
+                }
+                .proyecto5{
+                  grid-area: proyecto5;
+                }
+                .proyecto6{
+                  grid-area: proyecto6;
+                }
+            }
+            div{
+                h4{
+                   font-size: 20px;
+                   width: 300px;
+                   height: 25px;
+                   padding: 3px;
+                   margin:10px;
+                   border-radius:10px;
+                }
+            }
+            div{
+                .carrusel-imagen{
+                    height: 300px;
+                    width: 300px;
+                    padding: 10px;
+                    margin:10px;
+                }
+            }
+            div{
+                p{
+                    .texto-proyecto{
+                        font-size: 12px;
+                        color: black;
+                        height: 100%;
+                        width: 300px;
+                        padding: 3px;
+                        margin: 10px;
+                        border-radius: 10px;
+                    }
+                }
+               
+            }
         }
     }
-    div h4{
-        font-size: 20px;
-        width: 300px;
-        height: 25px;
-        padding: 3px;
-        margin:10px;
-        border-radius:10px;
-    }
-    .carrusel-imagen{
-        height: 300px;
-        width: 300px;
-        padding: 10px;
-        margin:10px;
-    }
-    .texto-proyecto{
-        font-size: 12px;
-        color: black;
-        height: 100%;
-        width: 300px;
-        padding: 3px;
-        margin: 10px;
-        border-radius: 10px;
-    }
-    }
+}

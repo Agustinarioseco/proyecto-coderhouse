@@ -1,6 +1,7 @@
 /******INDEX******/
  /*menu de incio*/
- #header{
+header{
+  #header{
     overflow: hidden;
     background-color:$fondos-textos;
     display: grid;
@@ -8,85 +9,90 @@
     "imagen-logo menu";
     grid-template-columns: 140px 1fr;
     grid-template-rows: 135px;
-}
-.imagen-logo{
-    grid-area: imagen-logo;
-    background-color:$fondos-textos;
-    height: 130px;
-    width: 130px;
-    padding: 2px;
-    margin: 2px;
-}
-.menu{
-    overflow: hidden;
-    grid-area: menu;
-    text-decoration: none;
-    list-style-type: none;
-    height: 140px;
-    padding: 40px 10px;
-    margin: 10px 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .textomenu{
-      font-family:map-get($texto-menu,font);
-      font-size:map-get($texto-menu,size);
-      padding:map-get($texto-menu,padding);
-      margin:map-get($texto-menu,margin);
-      text-decoration:map-get($texto-menu,decoration);
-      color:map-get($texto-menu,color);
+  }
+  section{
+    .imagen-logo{
+      grid-area: imagen-logo;
+      background-color:$fondos-textos;
+      height: 130px;
+      width: 130px;
+      padding: 2px;
+      margin: 2px;
     }
-    a:hover{
-       font-weight: lighter;
-       padding: 8px;
-       background-color: #f6dce6;
-       color: #918f91;
-    }
-}
- /*frase inicio*/
-main {
-  div {
-    h2{
-    overflow: hidden;
-    font-family: "julius";
-    color: black;
-    font-size: 30px;
-    background-color: $color-listas;
-    opacity: 70%;
-    text-align: center;
-    height: 100px;
-    padding: 30px;
-    margin: 25px 30px;
-    border-radius: 30px;
-     a{
-       color: black;
-       font-family: "julius";
-       font-size: 30px;
-       text-align: center;
+  }
+  nav{
+    ul{
+      .menu{
+       overflow: hidden;
+       grid-area: menu;
        text-decoration: none;
-       height: 40px;
-       padding: 5px;
-       margin: 5px;
+       list-style-type: none;
+       height: 140px;
+        padding: 40px 10px;
+        margin: 10px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       align-items: center;
+      .textomenu{
+         font-family:map-get($texto-menu,font);
+         font-size:map-get($texto-menu,size);
+         padding:map-get($texto-menu,padding);
+         margin:map-get($texto-menu,margin);
+         text-decoration:map-get($texto-menu,decoration);
+         color:map-get($texto-menu,color);
+        }
+        a:hover{
+         font-weight: lighter;
+         padding: 8px;
+         background-color: #f6dce6;
+         color: #918f91;
+        }
       }
     }
   }
 }
- /*listas de la pagina de incio*/
-.listainicio{
-    background-color: $color-listas;
-    opacity: 70%;
-    text-align: center;
-    height: 100px;
-    padding: 30px;
-    margin: 50px;
-    border-radius: 30px;
+/*frase inicio*/
+main {
+  div {
+    h2{
+      @extend .listainicio;
+    }
+  }
 }
- /*pie de pagina*/
+/*listas de la pagina de incio*/
+main{
+ nav {
+   div{
+     .listainicio{
+      overflow: hidden;
+       background-color: $color-listas;
+       opacity: 70%;
+       text-align: center;
+       height: 100px;
+       padding: 30px;
+       margin: 25px 50px;
+       border-radius: 30px;
+       a{
+         color:map-get($textos-inicio , color );
+         font-family:map-get($textos-inicio , font);
+         font-size:map-get($textos-inicio , size);
+         text-align:map-get($textos-inicio , align);
+         text-decoration:map-get($textos-inicio , decoration);
+         height:map-get($textos-inicio , height);
+         padding:map-get($textos-inicio , padding);
+         margin:map-get($textos-inicio , margin);
+        }
+      }
+    }
+  }
+}
+/*pie de pagina*/
 footer{
-    overflow: hidden;
-    background-color:$fondos-textos;
-    opacity: 80%;
+  overflow: hidden;
+  background-color:$fondos-textos;
+  opacity: 80%;
+  div{
     h6{
       font-family:map-get($texto-footer,font);
       color:map-get($texto-footer,color);
@@ -96,22 +102,25 @@ footer{
       padding:map-get($texto-footer,padding);
       margin:map-get($texto-footer,margin);
     }
-    .footerr{
-      height: 45px;
-      width: 45px;
-    }
+  }
+  div{
     .redesfooter{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      @include flex-row-align;
+      .footerr{
+        height: 45px;
+        width: 45px;
+      }
     }
+  }
+  div{
     .pie-de-pagina{
-      font-family: "julius";
-      color: black;
-      font-size: 20px;
-      text-align: center;
-      width: 100%;
-      padding: 30px 5px 5px;
-      margin: 10px;
+     font-family: "julius";
+     color: black;
+     font-size: 20px;
+     text-align: center;
+     width: 100%;
+     padding: 30px 5px 5px;
+     margin: 10px;
     }
+  }   
 }

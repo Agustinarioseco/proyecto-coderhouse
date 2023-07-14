@@ -1,85 +1,105 @@
 /*pagina de contacto*/
-#main-contactos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.titulo-contacto{
-    font-family: "bebas neue";
-    font-size: 25px;
-    color: black;
-    background-color: $color-listas;
-    text-align: center;
-    height: 35px;
-    width: 350px;
-    padding: 5px;
-    margin:10px 180px;
-    border-radius: 15px;
-}
-.iconos{
-    height: 55px;
-    width: 55px;
-    padding: 5px;
-    margin: 10px;
-}
-.lista-contacto{
-    list-style-type: none;
-    color: black;
-    background-color: $fondos-textos;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: start;
-    height: 100%;
-    width: 500px;
-    padding: 15px;
-    margin: 15px 100px;
-    border-radius: 10px;
-}
-.texto6{
-    text-align: start;
-    color: black;
-    text-decoration: none;
-}
-form div input {
-    background-color: $color-listas;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: center;
-    height: 100%;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px;
-    border-radius: 10px;
-    border: $color-listas;
-}
-form div textarea{
-    background-color: $color-listas;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: start;
-    height: 100%;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px;
-    border-radius: 10px;
-    border: $color-listas;
-}
-form div button{
-    background-color:$color-listas;
-    font-family: "julius";
-    font-size: 20px;
-    text-align: center;
-    height: 100%;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px;
-    border-radius: 10px;
-    border: $color-listas;
-}
-iframe{
-    height: 440px;
-    width: 500px;
-    padding: 5px;
-    margin: 5px 100px;
+main{
+    section{
+        #main-contactos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            h4{
+                .titulo-contacto{
+                    font-family: "bebas neue";
+                    font-size: 25px;
+                    color: black;
+                    background-color: $color-listas;
+                    text-align: center;
+                    height: 35px;
+                    width: 350px;
+                    padding: 5px;
+                    margin:10px 180px;
+                    border-radius: 15px;
+                }
+            }
+        }
+        div{
+            nav{
+                ul{
+                    .lista-contacto{
+                        list-style-type: none;
+                        background-color: $fondos-textos;
+                        font-family: "julius";
+                        font-size: 20px;
+                        height: 100%;
+                        width: 500px;
+                        padding: 15px;
+                        margin: 15px 100px;
+                        border-radius: 10px;
+                        .iconos{
+                          height: 55px;
+                          width: 55px;
+                          padding: 5px;
+                          margin: 10px;
+                        }
+                        .texto6{
+                            text-align: start;
+                            color: black;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        div{
+            iframe{
+                height: 440px;
+                width: 500px;
+                padding: 5px;
+                margin: 5px 100px;
+            }
+        }
+        div{
+            form{
+                div{
+                    input{
+                        background-color: $color-listas;
+                        font-family: "julius";
+                        font-size: 20px;
+                        text-align: center;
+                        height: 100%;
+                        width: 500px;
+                        padding: 5px;
+                        margin: 5px 100px;
+                        border-radius: 10px;
+                        border: $color-listas;
+                    }
+                    textarea{
+                        background-color: $color-listas;
+                        font-family: "julius";
+                        font-size: 20px;
+                        text-align: start;
+                        height: 100%;
+                        width: 500px;
+                        padding: 5px;
+                        margin: 5px 100px;
+                        border-radius: 10px;
+                        border: $color-listas;
+                    }
+                    button{
+                        background-color:$color-listas;
+                        font-family: "julius";
+                        font-size: 20px;
+                        text-align: center;
+                        height: 100%;
+                        width: 500px;
+                        padding: 5px;
+                        margin: 5px 100px;
+                        border-radius: 10px;
+                        border: $color-listas;
+                    }
+                }
+            }
+        }
+    }
 }
