@@ -1,3 +1,21 @@
 
-$color-listas: #e8a197;
+$color-listas: #e8a197; 
 $fondos-textos: #F4E7EC;
+
+$texto-menu:(
+    font: "bebas neue",
+    size: 25px,
+    padding: 40px 10px,
+    margin: 1px,
+    decoration: none,
+    color: #918f91,
+);
+$texto-footer:(
+    font: "bebas neue",
+    color: #918f91,
+    align: center,
+    width: 100%,
+    size: 45px,
+    padding: 10px,
+    margin: 10px,
+);

@@ -30,12 +30,12 @@
     justify-content: space-between;
     align-items: center;
     .textomenu{
-       font-family: "bebas neue";
-       font-size: 25px;
-       padding: 40px 10px;
-       margin: 1px;
-       text-decoration: none;
-       color: #918f91;
+      font-family:map-get($texto-menu,font);
+      font-size:map-get($texto-menu,size);
+      padding:map-get($texto-menu,padding);
+      margin:map-get($texto-menu,margin);
+      text-decoration:map-get($texto-menu,decoration);
+      color:map-get($texto-menu,color);
     }
     a:hover{
        font-weight: lighter;
@@ -45,7 +45,9 @@
     }
 }
  /*frase inicio*/
-main div h2{
+main {
+  div {
+    h2{
     overflow: hidden;
     font-family: "julius";
     color: black;
@@ -57,16 +59,18 @@ main div h2{
     padding: 30px;
     margin: 25px 30px;
     border-radius: 30px;
-    a{
-      color: black;
-      font-family: "julius";
-      font-size: 30px;
-      text-align: center;
-      text-decoration: none;
-      height: 40px;
-      padding: 5px;
-      margin: 5px;
+     a{
+       color: black;
+       font-family: "julius";
+       font-size: 30px;
+       text-align: center;
+       text-decoration: none;
+       height: 40px;
+       padding: 5px;
+       margin: 5px;
+      }
     }
+  }
 }
  /*listas de la pagina de incio*/
 .listainicio{
@@ -84,13 +88,13 @@ footer{
     background-color:$fondos-textos;
     opacity: 80%;
     h6{
-      font-family: "bebas neue";
-      color: #918f91;
-      text-align: center;
-      width: 100%;
-      font-size: 45px;
-      padding: 10px;
-      margin: 10px;
+      font-family:map-get($texto-footer,font);
+      color:map-get($texto-footer,color);
+      text-align:map-get($texto-footer,align);
+      width:map-get($texto-footer,width);
+      font-size:map-get($texto-footer,size);
+      padding:map-get($texto-footer,padding);
+      margin:map-get($texto-footer,margin);
     }
     .footerr{
       height: 45px;
